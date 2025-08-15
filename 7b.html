@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 7b</title>
+  </head>
+  <body>
+    <script>
+      function greet(name) {
+        console.log('Hello,' + name +'!');
+      }
+      greet('Rabeen');
+
+        function greetWithTime (name,hour) {
+          
+          console.log('name is ' + name);
+          console.log('hour is ' + hour);
+          
+          if (hour >= 6 && hour < 12) {
+            console.log('Good Morning,' + name + '!');
+          } else if (hour >= 12 && hour < 17) {
+            console.log('Good Afternoon,' + name + '!');
+          } else if (hour >= 17 && hour < 22) {
+            console.log('Good Evening.' + name + '!');
+
+          } else if   ( hour  >= 22 && hour < 6) {
+            console.log('Good Night,' + name + '!');
+          } else {
+            console.log('undefined!! please enter name and hour!')
+          }
+          
+
+        } 
+
+        greetWithTime('rabeen', 13);
+    </script>
+  </body>
+    
+</html>
